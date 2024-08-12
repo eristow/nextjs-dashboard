@@ -1,10 +1,10 @@
-import { fetchCustomers, fetchFilteredCustomers } from '@/app/lib/data';
-import { FormattedCustomersTable } from '@/app/lib/definitions';
+import { fetchFilteredCustomers } from '@/app/lib/data';
 import CustomersTable from '@/app/ui/customers/table';
-import Table from '@/app/ui/customers/table';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
-import { Suspense } from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default async function Page({
   searchParams,
